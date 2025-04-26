@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>To do list</h1>
-      <Todolist todos={todos} title="This is React" />
+      <Todolist todos={todos} title="REACT" />
     </div>
   );
 }
