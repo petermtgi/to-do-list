@@ -4,8 +4,7 @@ import Todolist from './Components/Todolist';
 
 function App() {
   const [todos, setTodos] = useState([]);
-
-  // Fetch data inside useEffect
+  
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/todos')
       .then((response) => response.json())
@@ -15,8 +14,7 @@ function App() {
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
-  }, []);  // Empty dependency array means it runs once when the component mounts
-
+  }, []);  
   return (
     <div className="App">
       <h1>To do list</h1>
@@ -25,4 +23,4 @@ function App() {
   );
 }
 
-export default App;  // Export App only once
+export default App;  
